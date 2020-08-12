@@ -6,6 +6,7 @@ To disable a specific role's spawn broadcast, just leave the setting blank, just
 | Config Setting | Type | Default |
 | --- | --- | --- |
 | is_enabled | bool | false |
+| broadcast_duration | int | 10 |
 | class_d | string | null |
 | chaos_insurgency | string | null |
 | scientist | string | null |
