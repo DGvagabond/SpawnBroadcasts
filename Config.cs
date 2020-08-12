@@ -9,6 +9,7 @@ namespace SpawnBroadcasts
         public bool IsEnabled { get; set; } = false;
         public int BroadcastDuration { get; set; } = 10;
         public string ClassD { get; set; } = "";
+        public string ChaosInsurgency { get; set; } = "";
         public string Scientist { get; set; } = "";
         public string FacilityGuard { get; set; } = "";
         public string MtfCadet { get; set; } = "";
