@@ -15,6 +15,11 @@ namespace SpawnBroadcasts.Handlers
                 ev.Player.ClearBroadcasts();
                 ev.Player.Broadcast((ushort)Plugin.Instance.Config.BroadcastDuration, $"{Plugin.Instance.Config.ClassD}");
             }
+            if (ev.NewRole == RoleType.ChaosInsurgency && Plugin.Instance.Config.ChaosInsurgency != "")
+            {
+                ev.Player.ClearBroadcasts();
+                ev.Player.Broadcast((ushort)Plugin.Instance.Config.BroadcastDuration, $"{Plugin.Instance.Config.ChaosInsurgency}");
+            }
             if (ev.NewRole == RoleType.Scientist && Plugin.Instance.Config.Scientist != "")
             {
                 ev.Player.ClearBroadcasts();
